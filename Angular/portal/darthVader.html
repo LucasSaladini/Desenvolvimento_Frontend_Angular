@@ -8,26 +8,21 @@
   </head>
   <body>
     <div class="container">
-      <div class="card">
-        <div class="card__left">
-          <span>By Lucas Saladini</span>
-          <a href="#">Darth Vader Contrata Devs</a>
-          <p>
-            Darth Vader procura desenvolvedores que sabem trabalhar com
-            componentes
-          </p>
-        </div>
-        <div class="card__right">
-          <img
-            src="/portal/assets/607598d0230e6a00018e21b2-image_354b1b56.jpeg"
-            alt=""
-          />
-        </div>
-      </div>
+      <card-news
+        author="Lucas"
+        title="Darth Vader Contrata"
+        content="Darth Vader procura desenvolvedores que sabem trabalhar com
+    componentes"
+        url="#"
+        photo="/portal/assets/607598d0230e6a00018e21b2-image_354b1b56.jpeg"
+      ></card-news>
+      <card-news
+        author="Amanda"
+        title="Yoda convence republica a utilizar components"
+        content="Yoda se pronuncia e choca a republica"
+        url="#"
+      ></card-news>
     </div>
-    <card-news></card-news>
-    <titulo-dinamico titulo="Notícia Urgente!"></titulo-dinamico>
-    <titulo-dinamico titulo="Breaking News"></titulo-dinamico>
     <script src="/portal/src/components/CardNews.js" defer></script>
     <script src="/portal/src/components/TituloDinamico.js" defer></script>
   </body>
