@@ -1,0 +1,1 @@
+let boleto:[string, number, number] = ['água conta', 199.90, 1234567890]
