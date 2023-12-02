@@ -1,9 +1,17 @@
+/*
+    data modifiers
+        public
+        private
+        protected
+*/
+
 class Character {
-    name?: string
+    private name?: string
     strength: number
     skill: number
 
-    constructor(strength: number, skill: number) {
+    constructor(name: string, strength: number, skill: number) {
+        this.name = name
         this.strength = strength
         this.skill = skill
     }
@@ -13,7 +21,7 @@ class Character {
     }
 }
 
-const p1 = new Character(10, 98)
+const p1 = new Character("Ryu", 10, 98)
 
 console.log(p1)
 p1.attack()
