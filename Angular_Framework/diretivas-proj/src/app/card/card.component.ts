@@ -16,6 +16,10 @@ export class CardComponent implements OnInit{
     ]
   }
 
+  adicionar() {
+    this.produtos.push("Lucas")
+  }
+
   ngOnInit(): void {
 
   }
