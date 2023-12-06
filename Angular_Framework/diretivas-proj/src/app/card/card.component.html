@@ -7,3 +7,26 @@
   </li>
   <button (click)="adicionar()">Adicionar</button>
 </ul>
+<div [ngSwitch]="menuType">
+  <div *ngSwitchDefault="">
+    <ul>
+      <li>Editar Perfil</li>
+      <li>Adicionar Cartão</li>
+    </ul>
+  </div>
+  <div *ngSwitchCase="'admin'">
+    <ul>
+      <li>Editar Perfil</li>
+      <li>Adicionar Cartão</li>
+      <li>Gerenciar Usuários</li>
+    </ul>
+  </div>
+  <div *ngSwitchCase="'superuser'">
+    <ul>
+      <li>Editar Perfil</li>
+      <li>Adicionar Cartão</li>
+      <li>Gerenciar Usuários</li>
+      <li>Gerenciar admins</li>
+    </ul>
+  </div>
+</div>
