@@ -1,6 +1,7 @@
 <p [ngClass]="style">comp-atributos works!</p>
 <button (click)="change()">Change</button>
 <h1 [ngStyle]="{ background: corFundo, color: corDaFonte }">Curso Angular</h1>
+<ng-content select="h2"></ng-content>
 <h1>Lista de compras</h1>
 <p>Adicione um item</p>
 <input type="text" [(ngModel)]="item" />
@@ -18,3 +19,4 @@
   <a href="#">Adicionar ao Carrinho</a>
 </ng-template>
 <hr />
+<ng-content select="p"></ng-content>
