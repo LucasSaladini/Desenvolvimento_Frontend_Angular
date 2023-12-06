@@ -20,8 +20,8 @@ export class CardComponent implements OnInit{
     this.produtos.push("Lucas")
   }
 
-  remover() {
-    this.produtos.pop()
+  remover(index: number) {
+    this.produtos.splice(index, 1)
   }
 
   ngOnInit(): void {
