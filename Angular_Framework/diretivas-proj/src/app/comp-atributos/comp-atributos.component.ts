@@ -11,6 +11,7 @@ export class CompAtributosComponent implements OnInit{
   corDaFonte: string = "blue"
   item: string = ""
   list: string[] = []
+  isEnabled: boolean = true
 
   constructor() {}
 

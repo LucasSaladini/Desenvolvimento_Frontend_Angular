@@ -10,3 +10,11 @@
   <li *ngFor="let element of list">{{ element }}</li>
 </ul>
 <hr />
+<ng-template [ngIf]="isEnabled">
+  <a href="#">Finalizar Compra</a>
+</ng-template>
+<br />
+<ng-template [ngIf]="true">
+  <a href="#">Adicionar ao Carrinho</a>
+</ng-template>
+<hr />
