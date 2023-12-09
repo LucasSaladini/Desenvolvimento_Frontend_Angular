@@ -11,7 +11,7 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   {
-    path: 'portfolio',
+    path: 'portfolio/:id',
     component: CardComponent,
     pathMatch: 'prefix',
   },
