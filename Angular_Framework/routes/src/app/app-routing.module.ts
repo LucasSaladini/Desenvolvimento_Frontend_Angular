@@ -11,9 +11,19 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   {
-    path: 'portfolio/:id',
+    path: 'portfolio',
     component: CardComponent,
-    pathMatch: 'prefix',
+    children: [
+      {
+        path: ':id',
+        component: CardComponent,
+        pathMatch: 'prefix',
+      },
+      {
+        path: ':id/:user',
+        component: CardComponent,
+      },
+    ]
   },
   {
     path: '**',
