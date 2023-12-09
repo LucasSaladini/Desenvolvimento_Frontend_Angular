@@ -15,6 +15,11 @@ export class CardComponent implements OnInit {
       res => console.log(res)
     )
 
+
+    this.parameters.firstChild?.params.subscribe(
+      res => console.log(res)
+    )
+
     this.parameters.queryParams.subscribe(
       res => console.log(res)
     )
